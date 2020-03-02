@@ -106,14 +106,13 @@ section header h2 {
 }
 .comments{
     width: 80%;
-    min-height: 300px;
     margin: 0 auto;
     direction: rtl;
     font-family: 'Iranian Sans';
     line-height: 200%;
     display: grid;
     grid-gap: 5px / 5px;
-    grid-template: 1fr 2fr / 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template: 1fr 2fr / repeat(6 , 16%);
     justify-content: space-between;
     z-index: 1;
 }
@@ -122,6 +121,7 @@ section header h2 {
 }
 .comments-nth-child h4{
     font-size: 16px;
+    margin-top: 15px;
 }
 .comments-nth-child span{
     font-size: 9px;
@@ -129,19 +129,29 @@ section header h2 {
 }
 .comments-nth-child p{
     font-size: 13px;
-}
-.comments-nth-child2{
-    grid-column: 1 / 3;
+    margin-left: 15px;
 }
 .comments-nth-child1{
-   grid-column: 3 / 7;
+    grid-column: 1 / 5;
 }
-.comments-nth-child4{
-    grid-column: 1 / 3;
+.comments-nth-child2{
+   grid-column: 5 / 7;
 }
 .comments-nth-child3{
     grid-column: 3 / 7;
 }
+.comments-nth-child4{
+    grid-column: 1 / 3;
+}
+
+.child {
+    display: grid;
+    grid-template:1fr 50px  / 50px 1fr;
+}
+/* .child--inner{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+} */
 .comments--pr{
     color: rgb(102, 102, 102);
 }
@@ -150,19 +160,24 @@ section header h2 {
 }
 .some-customers {
     margin: 0 auto;
-    width: 95%;
-    display: flex;
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    grid-gap: 1%;
     z-index: 1;
     justify-content: space-between;
+    justify-items: center;
 }
 footer{
     z-index: 1;
-    width: 77%;
+    width: 98%;
     padding: 1% 1% 2% 1%;
     margin-bottom: 10px;
-    display: flex;
-    padding-left: 20%;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 3fr 1.4fr 1.2fr;
+    justify-items: center;
+    /* align-items: center; */
+    justify-content: center;
     font-family: 'Iranian Sans';
     font-size: 12px;
     justify-content: space-between;
@@ -173,7 +188,7 @@ footer{
     position: relative;
 }
 .cybercrime-law{
-    width: 30%;
+    width: 40%;
     text-align: center;
     font-family: 'Iranian Sans';
 }
