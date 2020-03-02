@@ -24,20 +24,16 @@ body{
     z-index: 10;
 }
 .header-top--nav ul{
-    display: flex;
-    flex-direction: row;
+    display: grid;
     width: 50%;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 0.5fr 1fr;
     justify-content:space-evenly;
     font-family: 'Iranian Sans';
     font-size: 15px;
     direction: rtl; 
     color: #ffffff;
 }
-.header-top--nav ul li:hover{
-    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
-    font-size: 15.5px;
-}
-
 .hr-a{
     margin-top: 160px;
     border: 0.5px  solid #3FCFC7 ;
@@ -47,48 +43,36 @@ body{
 section header {
     text-align: center;
     margin: 50px;
-    direction: rtl;
-    font-family: 'Iranian Sans';
 }
 section header h2 {
-    font-size: 28px;
+    font-family: 'Iranian Sans';
+    font-size: 20px;
+    direction: rtl;
     margin-bottom: 20px; 
-    color: #414141;
 }
-section header p {
-    font-size: 15px;
-    color: #b9b9b9;
-}
-
 .public-service{
     width: 80%;
     margin: 0 auto;
 }
-.public-service--article{
-    display: flex;
-    flex-wrap: wrap;
+.public-service--article {
+    display: grid;
+    grid-template:1fr 1fr / 1fr 1fr 1fr;
     justify-content:space-between;
     align-content:stretch;
     align-items: baseline;
 }
 .public-service--article article{
-    width: 33.33%;
     margin-top: 20px;
     text-align: center;
 }
 .public-service--img{
-    width: 45%;
+    width: 50%;
     height: auto;
 }
 .public-service--article article h4{
-    margin-top: 15px;
+    margin-top: 10px;
     font-size: 13px;
-    color: rgb(39, 39, 39);
     font-family:'Iranian Sans';
-}
-.public-service--article article h4:hover{
-    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
-    font-size: 13.5px;
 }
 .slider{
     align-items: center;
@@ -105,15 +89,15 @@ section header p {
 }
 .slider a{
     margin: 10px auto;
-    background-color: #fafafa;
+    background-color: #ffffff;
     border:2px solid  #3FCFC7;
     border-radius: 30px;
     color: #3FCFC7;
-    font-size: 20px;
-    padding:10px 25px;
+    font-size: 15px;
+    padding:10px 15px;
 }
 .btn {
-    display: flex;
+    display: grid;
     margin: 0 auto;
     align-items: center;
     align-content: center;
@@ -127,19 +111,14 @@ section header p {
     direction: rtl;
     font-family: 'Iranian Sans';
     line-height: 200%;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-gap: 5px / 5px;
+    grid-template: 1fr 2fr / 1fr 1fr 1fr 1fr 1fr 1fr;
     justify-content: space-between;
     z-index: 1;
 }
 .comments-nth-child{
-    padding: 2% 50px 40px 1%;
-    margin: 5px 0;
     background-color: #ffffff;
-}
-.comments-nth-child--inner{
-    padding: 2% 50px 40px 1%;
-    margin: 10px 0;
 }
 .comments-nth-child h4{
     font-size: 16px;
@@ -151,19 +130,18 @@ section header p {
 .comments-nth-child p{
     font-size: 13px;
 }
-.comments-nth-child1{
-    width: calc(40% - 10px);
-}
 .comments-nth-child2{
-    width: calc(49% - 10px);
+    grid-column: 1 / 3;
 }
-.comments-nth-child3{
-    width: calc(65% - 10px);
+.comments-nth-child1{
+   grid-column: 3 / 7;
 }
 .comments-nth-child4{
-    width: calc(30% - 10px);
+    grid-column: 1 / 3;
 }
-
+.comments-nth-child3{
+    grid-column: 3 / 7;
+}
 .comments--pr{
     color: rgb(102, 102, 102);
 }
@@ -175,7 +153,7 @@ section header p {
     width: 95%;
     display: flex;
     z-index: 1;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 footer{
     z-index: 1;
@@ -205,19 +183,15 @@ footer{
 }
 .cybercrime-law p{
     line-height: 2;
-    color: #585858;
 }
 .information{
     direction: rtl;
-    line-height: 2.7;
+    line-height: 2;
     font-family: 'Iranian Sans';
 }
 .information h4 {
     font-size: 15px;
     margin-bottom: 10px;
-}
-.information p ul li{
-    color: #585858;
 }
 #span{
     color: #3FCFC7;
@@ -227,14 +201,6 @@ footer{
 }
 .social-networks h3{
     font-size: 15px;
-    margin-bottom: 20px;
-}
-.social-networks h4{
-    font-size: 13px;
-}
-.social-networks h4:hover{
-    font-size: 13.5px;
-    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
 }
 .social-inner{
     margin-top: 10px;
@@ -244,5 +210,4 @@ footer{
 }
 .social-inner img{
     width: 30px;
-    margin-left: 10px;
 }
