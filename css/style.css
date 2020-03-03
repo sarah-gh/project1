@@ -52,7 +52,7 @@ section header {
 }
 section header h2 {
     font-size: 28px;
-    margin-bottom: 20px; 
+    margin:70px 0 20px 0 ; 
     color: #414141;
 }
 section header p {
@@ -68,8 +68,9 @@ section header p {
     display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
-    align-content:stretch;
+    align-content:center;
     align-items: baseline;
+    text-align: center;
 }
 .public-service--article article{
     width: 33.33%;
@@ -81,8 +82,11 @@ section header p {
     height: auto;
 }
 .public-service--article article h4{
-    margin-top: 15px;
-    font-size: 13px;
+    margin: 15px auto 0 auto;
+    font-size: 14px;
+    width: 90%;
+    color: #414141;
+    text-align: center;
     color: rgb(39, 39, 39);
     font-family:'Iranian Sans';
 }
@@ -101,7 +105,7 @@ section header p {
 .slider img {
     width: 100%;
     height: auto;
-    margin-bottom: 10px;
+    margin: 30px 0 10px 0;
 }
 .slider a{
     margin: 10px auto;
@@ -111,6 +115,12 @@ section header p {
     color: #3FCFC7;
     font-size: 20px;
     padding:10px 25px;
+}
+.slider a:hover{
+    background-color: #3FCFC7;
+    color: white;
+    transition: 0.5s;
+    box-shadow: 3px 3px 5px #414141;
 }
 .btn {
     display: flex;
