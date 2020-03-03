@@ -85,14 +85,15 @@ section header p {
     margin: 15px auto 0 auto;
     font-size: 14px;
     width: 90%;
-    color: #414141;
+    color: #535353;
     text-align: center;
-    color: rgb(39, 39, 39);
     font-family:'Iranian Sans';
 }
 .public-service--article article h4:hover{
     text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
-    font-size: 13.5px;
+    font-size: 14.5px;
+    color: #333333;
+
 }
 .slider{
     align-items: center;
@@ -147,6 +148,9 @@ section header p {
     margin: 5px 0;
     background-color: #ffffff;
 }
+.comments-nth-child:hover{
+    box-shadow: 1px 1px 3px #414141;
+}
 .comments-nth-child--inner{
     padding: 2% 50px 40px 1%;
     margin: 10px 0;
@@ -169,6 +173,12 @@ section header p {
 }
 .comments-nth-child3{
     width: calc(65% - 10px);
+    align-content: space-between;
+}
+.comment--bottom {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
 }
 .comments-nth-child4{
     width: calc(30% - 10px);
