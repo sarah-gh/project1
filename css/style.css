@@ -36,6 +36,22 @@ body{
     direction: rtl; 
     color: #ffffff;
 }
+.header-top--nav-ul {
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    width: 30%;
+    justify-content: space-evenly;
+    font-family: 'Iranian Sans';
+    font-size: 15px;
+    direction: rtl;
+    background-color: #3FCFC7;
+    color: #ffffff;
+}
+.header-top--nav-ul li{
+    padding: 20px;
+    margin: 0 auto;
+}
 .nav-scroll{
     display: flex;
     flex-direction: row;
@@ -140,7 +156,6 @@ section header p {
     background-color: #3FCFC7;
     color: white;
     transition: 0.5s;
-    box-shadow: 3px 3px 5px #414141;
 }
 .btn {
     display: flex;
