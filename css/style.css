@@ -14,6 +14,9 @@ body{
     z-index: -10;
     width: 100%;
 }
+#menu-img{
+    display: none;
+}
 .logo img{
     z-index: -10;
     width: 100%;
@@ -33,6 +36,22 @@ body{
     direction: rtl; 
     color: #ffffff;
 }
+.nav-scroll{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    top: 0;
+    padding: 20px;
+    position: fixed;
+    justify-content:space-evenly;
+    font-family: 'Iranian Sans';
+    font-size: 15px;
+    direction: rtl; 
+    color: #ffffff;
+    background-color: #3FCFC7;
+    opacity: 0.9;
+}
+
 .header-top--nav ul li:hover{
     text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
     font-size: 15.5px;
@@ -85,7 +104,7 @@ section header p {
     margin: 15px auto 0 auto;
     font-size: 14px;
     width: 90%;
-    color: #535353;
+    color: #696969;
     text-align: center;
     font-family:'Iranian Sans';
 }
@@ -197,6 +216,19 @@ section header p {
     z-index: 1;
     justify-content: space-around;
 }
+.some-customers a img {
+    margin: 0 auto;
+    width: 90%;
+    opacity: 0.4;
+}
+#line{
+    width: 100%;
+}
+#svg {
+    left: 83%;
+    margin-top: -110px;
+    width: 6%;
+}
 footer{
     z-index: 1;
     width: 77%;
@@ -209,11 +241,7 @@ footer{
     font-size: 12px;
     justify-content: space-between;
 }
-.footer--img{
-    margin-top: -20px;
-    width: 100%;
-    position: relative;
-}
+
 .cybercrime-law{
     width: 30%;
     text-align: center;
@@ -249,7 +277,7 @@ footer{
     font-size: 15px;
     margin-bottom: 20px;
 }
-.social-networks h4{
+.social-inner a h4{
     font-size: 13px;
 }
 .social-networks h4:hover{
