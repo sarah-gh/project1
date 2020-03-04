@@ -14,6 +14,9 @@ body{
     z-index: -10;
     width: 100%;
 }
+#menu-img{
+    display: none;
+}
 .logo img{
     z-index: -10;
     width: 100%;
@@ -34,6 +37,33 @@ body{
     direction: rtl; 
     color: #ffffff;
 }
+
+.header-top--nav-ul li{
+    padding: 20px;
+    margin: 0 auto;
+}
+.nav-scroll{
+    display: grid;
+    grid-template:1fr /1fr 1fr 1fr 1fr ;
+    width: 100%;
+    top: 0;
+    padding: 20px;
+    position: fixed;
+    justify-content:space-evenly;
+    justify-items: center;
+    font-family: 'Iranian Sans';
+    font-size: 15px;
+    direction: rtl; 
+    color: #ffffff;
+    background-color: #3FCFC7;
+    opacity: 0.9;
+}
+
+.header-top--nav ul li:hover{
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
+    font-size: 15.5px;
+}
+
 .hr-a{
     margin-top: 160px;
     border: 0.5px  solid #3FCFC7 ;
@@ -43,36 +73,51 @@ body{
 section header {
     text-align: center;
     margin: 50px;
+    direction: rtl;
+    font-family: 'Iranian Sans';
 }
 section header h2 {
-    font-family: 'Iranian Sans';
-    font-size: 20px;
-    direction: rtl;
-    margin-bottom: 20px; 
+    font-size: 28px;
+    margin:100px 0 20px 0 ; 
+    color: #414141;
 }
+section header p {
+    font-size: 15px;
+    color: #b9b9b9;
+    margin-bottom: 80px;
+}
+
 .public-service{
     width: 80%;
     margin: 0 auto;
 }
-.public-service--article {
+.public-service--article{
     display: grid;
     grid-template:1fr 1fr / 1fr 1fr 1fr;
     justify-content:space-between;
-    align-content:stretch;
-    align-items: baseline;
+    grid-gap: 20px 20px;
+    
 }
 .public-service--article article{
     margin-top: 20px;
     text-align: center;
 }
-.public-service--img{
-    width: 50%;
+/* .public-service--img{
+    width: 45%;
     height: auto;
-}
+} */
 .public-service--article article h4{
-    margin-top: 10px;
-    font-size: 13px;
+    margin: 15px auto 0 auto;
+    font-size: 14px;
+    width: 90%;
+    color: #696969;
+    text-align: center;
     font-family:'Iranian Sans';
+}
+.public-service--article article h4:hover{
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
+    font-size: 14.5px;
+    color: #333333;
 }
 .slider{
     align-items: center;
@@ -85,16 +130,21 @@ section header h2 {
 .slider img {
     width: 100%;
     height: auto;
-    margin-bottom: 10px;
+    margin: 30px 0 10px 0;
 }
 .slider a{
     margin: 10px auto;
-    background-color: #ffffff;
+    background-color: #fafafa;
     border:2px solid  #3FCFC7;
     border-radius: 30px;
     color: #3FCFC7;
-    font-size: 15px;
-    padding:10px 15px;
+    font-size: 20px;
+    padding:10px 25px;
+}
+.slider a:hover{
+    background-color: #3FCFC7;
+    color: white;
+    transition: 0.5s;
 }
 .btn {
     display: grid;
@@ -106,22 +156,31 @@ section header h2 {
 }
 .comments{
     width: 80%;
+    min-height: 300px;
     margin: 0 auto;
     direction: rtl;
     font-family: 'Iranian Sans';
     line-height: 200%;
     display: grid;
-    grid-gap: 5px / 5px;
-    grid-template: 1fr 2fr / repeat(6 , 16%);
-    justify-content: space-between;
+    grid-template: repeat(3, 1fr)/repeat(7, 1fr);
+    padding: 30px;
+    grid-gap: 0px 20px;
     z-index: 1;
 }
 .comments-nth-child{
+    padding: 2% 50px 40px 1%;
+    margin: 10px 0;
     background-color: #ffffff;
+}
+.comments-nth-child:hover{
+    box-shadow: 1px 1px 3px #414141;
+}
+.comments-nth-child--inner{
+    padding: 2% 50px 40px 1%;
+    margin: 10px 0;
 }
 .comments-nth-child h4{
     font-size: 16px;
-    margin-top: 15px;
 }
 .comments-nth-child span{
     font-size: 9px;
@@ -129,29 +188,36 @@ section header h2 {
 }
 .comments-nth-child p{
     font-size: 13px;
-    margin-left: 15px;
 }
 .comments-nth-child1{
     grid-column: 1 / 5;
+    grid-row: 1 / 2;
 }
 .comments-nth-child2{
-   grid-column: 5 / 7;
+   grid-column: 5 / 8;
+   grid-row: 1 / 2;
 }
 .comments-nth-child3{
-    grid-column: 3 / 7;
+    grid-column: 4 / 8;
+    grid-row: 2 / 4;
 }
 .comments-nth-child4{
-    grid-column: 1 / 3;
+    grid-column: 1 / 4;
+    grid-row: 2 / 4;
+}
+.child3{
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+    height: auto;
+    grid-gap: 10px 0px;
 }
 
-.child {
-    display: grid;
-    grid-template:1fr 50px  / 50px 1fr;
-}
-/* .child--inner{
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
+/* .comment--bottom {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
 } */
+
 .comments--pr{
     color: rgb(102, 102, 102);
 }
@@ -160,35 +226,40 @@ section header h2 {
 }
 .some-customers {
     margin: 0 auto;
-    width: 85%;
+    width: 95%;
     display: grid;
-    grid-template-columns: repeat(6 , 1fr);
-    grid-gap: 1%;
+    grid-template:1fr / 1fr 1fr 0.8fr 1fr 1fr 0.8fr ;
     z-index: 1;
-    justify-content: space-between;
-    justify-items: center;
+    justify-content: space-around;
+}
+.some-customers a img {
+    margin: 0 auto;
+    width: 70%;
+    opacity: 0.4;
+}
+#line{
+    width: 100%;
+}
+#svg {
+    left: 83%;
+    margin-top: -110px;
+    width: 6%;
 }
 footer{
     z-index: 1;
-    width: 98%;
+    width: 77%;
     padding: 1% 1% 2% 1%;
     margin-bottom: 10px;
-    display: grid;
-    grid-template-columns: 3fr 1.4fr 1.2fr;
-    justify-items: center;
-    /* align-items: center; */
-    justify-content: center;
+    display: flex;
+    padding-left: 20%;
+    flex-direction: row;
     font-family: 'Iranian Sans';
     font-size: 12px;
     justify-content: space-between;
 }
-.footer--img{
-    margin-top: -20px;
-    width: 100%;
-    position: relative;
-}
+
 .cybercrime-law{
-    width: 40%;
+    width: 30%;
     text-align: center;
     font-family: 'Iranian Sans';
 }
@@ -198,15 +269,19 @@ footer{
 }
 .cybercrime-law p{
     line-height: 2;
+    color: #585858;
 }
 .information{
     direction: rtl;
-    line-height: 2;
+    line-height: 2.7;
     font-family: 'Iranian Sans';
 }
 .information h4 {
     font-size: 15px;
     margin-bottom: 10px;
+}
+.information p ul li{
+    color: #585858;
 }
 #span{
     color: #3FCFC7;
@@ -216,6 +291,14 @@ footer{
 }
 .social-networks h3{
     font-size: 15px;
+    margin-bottom: 20px;
+}
+.social-inner a h4{
+    font-size: 13px;
+}
+.social-networks h4:hover{
+    font-size: 13.5px;
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
 }
 .social-inner{
     margin-top: 10px;
@@ -225,4 +308,5 @@ footer{
 }
 .social-inner img{
     width: 30px;
+    margin-left: 10px;
 }

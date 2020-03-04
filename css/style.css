@@ -36,18 +36,7 @@ body{
     direction: rtl; 
     color: #ffffff;
 }
-.header-top--nav-ul {
-    display: flex;
-    height: 200px;
-    flex-direction: column;
-    width: 30%;
-    justify-content: space-evenly;
-    font-family: 'Iranian Sans';
-    font-size: 15px;
-    direction: rtl;
-    background-color: #3FCFC7;
-    color: #ffffff;
-}
+
 .header-top--nav-ul li{
     padding: 20px;
     margin: 0 auto;
@@ -74,7 +63,7 @@ body{
 }
 
 .hr-a{
-    margin-top: 160px;
+    margin-top: 200px;
     border: 0.5px  solid #3FCFC7 ;
     opacity: 0.1;
 }
