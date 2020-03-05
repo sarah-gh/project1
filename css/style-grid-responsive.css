@@ -94,14 +94,12 @@
         grid-row: 3 / 4;
     }
 
-    .some-customers img {
-        width: 80%;
-        display: flex;
+    .some-customers a img {
+        width: 70%;
         align-self: center;
         justify-self: center;
         margin: 0 auto;
     }
-
     .information {
         display: none;
     }

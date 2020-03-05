@@ -231,10 +231,23 @@ section header p {
     grid-template:1fr / 1fr 1fr 0.8fr 1fr 1fr 0.8fr ;
     z-index: 1;
     justify-content: space-around;
+    justify-items: center;
+}
+.some-customers a {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+}
+.some-customers {
+    justify-items: center;
+    justify-content: center;
 }
 .some-customers a img {
     margin: 0 auto;
-    width: 70%;
+    width: 90%;
+    justify-items: center;
+    justify-content: center;
+    justify-self: center;
     opacity: 0.4;
 }
 #line{
