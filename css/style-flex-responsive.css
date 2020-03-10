@@ -1,26 +1,4 @@
-@media only screen and (max-width : 1390px) {
-    .comments-nth-child1 {
-        width: calc(40% - 20px);
-    }
-
-    .comments-nth-child2 {
-        width: calc(47% - 10px);
-    }
-
-    .comments-bottum {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-
-    .comments-nth-child4 {
-        width: 93.5%;
-    }
-
-    .comments-nth-child3 {
-        width: 100%;
-    }
-}
+@media only screen and (max-width : 1390px) {}
 
 @media only screen and (max-width : 1170px) {}
 
