@@ -96,7 +96,7 @@ section header h2 {
     color: #414141;
 }
 section header p {
-    font-size: 15px;
+    font-size: 17px;
     color: #b9b9b9;
 }
 
@@ -125,7 +125,7 @@ section header p {
 }
 .public-service__article article h4{
     margin: 15px auto 0 auto;
-    font-size: 14px;
+    font-size: 16px;
     width: 90%;
     color: #696969;
     text-align: center;
@@ -227,7 +227,8 @@ section header p {
     color: rgb(102, 102, 102);
 }
 .some-customers-header{
-    margin: 20px;
+    width: 80%;
+    margin: 20px auto 20px auto;
 }
 .some-customers {
     margin: 0 auto;
@@ -251,13 +252,13 @@ section header p {
 }
 footer{
     z-index: 1;
-    width: 70%;
-    padding: 1% 40% 2% 1%;
+    width: 80%;
+    padding: 1% 10% 2% 1%;
     margin:0 auto 10px auto;
     display: flex;
     padding-left: 20%;
     flex-direction: row;
-    font-size: 12px;
+    font-size: 15px;
     justify-content: space-between;
 }
 
@@ -266,7 +267,7 @@ footer{
     text-align: center;
 }
 .cybercrime-law h4{
-    font-size: 15px;
+    font-size: 20px;
     margin: 10px 0;
 }
 .cybercrime-law p{
@@ -275,10 +276,10 @@ footer{
 }
 .information{
     direction: rtl;
-    line-height: 2.7;
+    line-height: 2.5;
 }
 .information h4 {
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 .information p ul li{
@@ -291,7 +292,8 @@ footer{
     direction: rtl;
 }
 .social-networks h3{
-    font-size: 15px;
+    font-size: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 .social-inner a h4{
