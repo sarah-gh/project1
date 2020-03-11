@@ -269,18 +269,19 @@ section header p {
 }
 footer{
     z-index: 1;
-    width: 80%;
+    width: 70%;
     padding: 1% 1% 2% 1%;
-    margin: 0 auto;
-    display: flex;
+    margin: 0 50px 0 0;
+    display: grid;
+    grid-template: 1fr / 2fr 1.5fr 1fr;
     padding-left: 20%;
-    flex-direction: row;
     font-size: 15px;
+    grid-gap: 0 20px;
     justify-content: space-evenly;
 }
 
 .cybercrime-law{
-    width: 30%;
+    width: 70%;
     text-align: center;
 }
 .cybercrime-law h4{
@@ -322,8 +323,8 @@ footer{
 }
 .social-inner{
     margin-top: 10px;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template: 1fr / 0.3fr 1fr ;
     align-items: center;
 }
 .social-inner img{
