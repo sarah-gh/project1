@@ -87,7 +87,6 @@ section header {
     text-align: center;
     margin: 50px;
     direction: rtl;
-    font-family: 'Iranian Sans';
 }
 section header h2 {
     font-size: 28px;
@@ -125,7 +124,6 @@ section header p {
     width: 90%;
     color: #696969;
     text-align: center;
-    font-family:'Iranian Sans';
 }
 .public-service__article article h4:hover{
     text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
@@ -172,7 +170,6 @@ section header p {
     min-height: 300px;
     margin: 0 auto;
     direction: rtl;
-    font-family: 'Iranian Sans';
     line-height: 200%;
     display: grid;
     grid-template: 1fr 1fr 1fr/repeat(1, 1fr);
