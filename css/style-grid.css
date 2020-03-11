@@ -2,56 +2,68 @@ html {
     background-color: #e4e4e4;
 }
 body{
-    width: 80%;
     margin: 0 auto;
     background-color: #fafafa;
+    font-family: IRANSans;
+}
+.container-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 .header-top {
     width: 100%;
     min-height: 100px;
+    display: grid;
+    grid-template: 1fr / repeat(9 , 1fr);
+    direction: rtl;
+    z-index: 10;
+    align-content: center;
+    margin: 10px auto 0 auto;
+}
+.header-backgrond{
+    width: 100%;
+    height: 300px;
+    position: absolute;
 }
 .logo{
-    z-index: -10;
-    width: 100%;
+    width: 50%;
+    height: auto;
+    grid-column: 1 / 4;
+}
+.logo img{
+    width: 90%;
+    margin-right: 30px;
+    margin-top: 0px;
 }
 #menu-img{
     display: none;
 }
-.logo img{
-    z-index: -10;
-    width: 100%;
-    height: 250px;
-}
-.header-top--nav{
-    margin-top: -210px;
+.header-top-nav{
     z-index: 10;
+    grid-column: 5 / 9;
 }
-.header-top--nav ul{
-    display: grid;
-    width: 50%;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 0.5fr 1fr;
-    justify-content:space-evenly;
-    font-family: 'Iranian Sans';
+.header-top-nav ul{
+    display:grid;
+    grid-template: 1fr / repeat(4 , 1fr);
     font-size: 15px;
+    grid-gap: 0 10px;
     direction: rtl; 
     color: #ffffff;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
 }
 
-.header-top--nav-ul li{
-    padding: 20px;
-    margin: 0 auto;
-}
 .nav-scroll{
-    display: grid;
-    grid-template:1fr /1fr 1fr 1fr 1fr ;
+    display: flex;
+    flex-direction: row;
     width: 100%;
     top: 0;
     padding: 20px;
     position: fixed;
     justify-content:space-evenly;
-    justify-items: center;
-    font-family: 'Iranian Sans';
     font-size: 15px;
     direction: rtl; 
     color: #ffffff;
@@ -59,15 +71,16 @@ body{
     opacity: 0.9;
 }
 
-.header-top--nav ul li:hover{
+.header-top-nav ul li:hover{
     text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
     font-size: 15.5px;
 }
 
 .hr-a{
-    margin-top: 160px;
+    margin-top: 220px;
     border: 0.5px  solid #3FCFC7 ;
     opacity: 0.1;
+    width: 80%;
 }
 
 section header {
@@ -91,14 +104,14 @@ section header p {
     width: 80%;
     margin: 0 auto;
 }
-.public-service--article{
+.public-service__article{
     display: grid;
     grid-template:1fr 1fr / 1fr 1fr 1fr;
     justify-content:space-between;
     grid-gap: 20px 20px;
     
 }
-.public-service--article article{
+.public-service__article article{
     margin-top: 20px;
     text-align: center;
 }
@@ -106,7 +119,7 @@ section header p {
     width: 45%;
     height: auto;
 } */
-.public-service--article article h4{
+.public-service__article article h4{
     margin: 15px auto 0 auto;
     font-size: 14px;
     width: 90%;
@@ -114,7 +127,7 @@ section header p {
     text-align: center;
     font-family:'Iranian Sans';
 }
-.public-service--article article h4:hover{
+.public-service__article article h4:hover{
     text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
     font-size: 14.5px;
     color: #333333;
@@ -162,62 +175,61 @@ section header p {
     font-family: 'Iranian Sans';
     line-height: 200%;
     display: grid;
-    grid-template: repeat(3, 1fr)/repeat(7, 1fr);
+    grid-template: 1fr 1fr 1fr/repeat(1, 1fr);
     padding: 30px;
     grid-gap: 0px 20px;
     z-index: 1;
-}
-.comments-nth-child{
-    padding: 2% 50px 40px 1%;
-    margin: 10px 0;
-    background-color: #ffffff;
-}
-.comments-nth-child:hover{
-    box-shadow: 1px 1px 3px #414141;
-}
-.comments-nth-child--inner{
-    padding: 2% 50px 40px 1%;
-    margin: 10px 0;
-}
-.comments-nth-child h4{
-    font-size: 16px;
-}
-.comments-nth-child span{
-    font-size: 9px;
-    color: rgb(163, 163, 163);
-}
-.comments-nth-child p{
     font-size: 13px;
 }
-.comments-nth-child1{
-    grid-column: 1 / 5;
+.comment{
+    background-color: #ffffff;
+    direction: rtl;
+    padding: 4% 0 4% 4%;
+}
+.comment h4 , .comment span , .comment p{
+    margin-right: 40px;
+}
+.comment h4 {
+    font-size: 20px;
+}
+.comment span{
+    font-size: 10px;
+    color: #585858;
+}
+.comments-top{
+    display: grid;
+    grid-template: repeat(1, 1fr)/repeat(9, 1fr);
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-bottom: 20px;
+    grid-gap: 0px 20px;
+}
+.comment-top-left{
+    grid-column: 4 / 10;
     grid-row: 1 / 2;
 }
-.comments-nth-child2{
-   grid-column: 5 / 8;
-   grid-row: 1 / 2;
-}
-.comments-nth-child3{
-    grid-column: 4 / 8;
-    grid-row: 2 / 4;
-}
-.comments-nth-child4{
+.comment-top-right{
     grid-column: 1 / 4;
-    grid-row: 2 / 4;
+    grid-row: 1 / 2;
 }
-.child3{
+.comment-inner-top{
+    margin-bottom: 20px;
+}
+.comments-bottom{
     display: grid;
-    grid-template: 1fr 1fr / 1fr;
-    height: auto;
-    grid-gap: 10px 0px;
+    grid-template: repeat(2, 1fr)/repeat(9, 1fr);
+    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+    grid-gap: 0px 20px;
 }
-
-/* .comment--bottom {
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;
-} */
-
+.comment-bottom-left{
+    grid-column: 1 / 7;
+    grid-row: 1 / 3;
+}
+.comment-bottom-right{
+    grid-column: 7 / 10;
+    grid-row: 1 / 3;
+}
 .comments--pr{
     color: rgb(102, 102, 102);
 }
@@ -260,24 +272,22 @@ section header p {
 }
 footer{
     z-index: 1;
-    width: 77%;
+    width: 80%;
     padding: 1% 1% 2% 1%;
-    margin-bottom: 10px;
+    margin: 0 auto;
     display: flex;
     padding-left: 20%;
     flex-direction: row;
-    font-family: 'Iranian Sans';
-    font-size: 12px;
-    justify-content: space-between;
+    font-size: 15px;
+    justify-content: space-evenly;
 }
 
 .cybercrime-law{
     width: 30%;
     text-align: center;
-    font-family: 'Iranian Sans';
 }
 .cybercrime-law h4{
-    font-size: 15px;
+    font-size: 20px;
     margin: 10px 0;
 }
 .cybercrime-law p{
@@ -287,10 +297,9 @@ footer{
 .information{
     direction: rtl;
     line-height: 2.7;
-    font-family: 'Iranian Sans';
 }
 .information h4 {
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 .information p ul li{
@@ -303,7 +312,8 @@ footer{
     direction: rtl;
 }
 .social-networks h3{
-    font-size: 15px;
+    font-size: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 .social-inner a h4{
@@ -322,4 +332,19 @@ footer{
 .social-inner img{
     width: 30px;
     margin-left: 10px;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    text-align: center;
+    text-justify: inter-cluster;
+    font-size: 20px;
+}
+.icon i{
+    color: rgb(114, 114, 114);
+    margin-top:5px;
+    opacity: 0.7;
 }
