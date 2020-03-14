@@ -120,15 +120,18 @@ section header p {
     padding: 30px;
     grid-gap: 0px 20px;
     z-index: 1;
-    font-size: 13px;
+    font-size: 14px;
 }
 .comment{
     background-color: #ffffff;
     direction: rtl;
-    padding: 4% 0 4% 4%;
+    padding:10px 0 20px 15px;
+    background-image: url(../img/comment.png);
+    background-position: right top;
+    background-repeat: no-repeat;
 }
 .comment h4 , .comment span , .comment p{
-    margin-right: 40px;
+    margin-right: 70px;
 }
 .comment h4 {
     font-size: 20px;
@@ -154,7 +157,12 @@ section header p {
     grid-row: 1 / 2;
 }
 .comment-inner-top{
-    margin-bottom: 20px;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+.comment-inner-bottom{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
 }
 .comments-bottom{
     display: grid;
@@ -164,6 +172,9 @@ section header p {
     grid-gap: 0px 20px;
 }
 .comment-bottom-left{
+    display: grid;
+    grid-template:1fr 1fr / 1fr ;
+    grid-gap: 20px;
     grid-column: 1 / 7;
     grid-row: 1 / 3;
 }
