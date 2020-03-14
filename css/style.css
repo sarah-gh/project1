@@ -31,13 +31,13 @@ section header {
 }
 
 section header h2 {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 600;
     margin:100px 0 20px 0 ; 
     color: #414141;
 }
 section header p {
-    font-size: 15px;
+    font-size: 16px;
     color: #b9b9b9;
     margin-bottom: 80px;
 }
@@ -57,6 +57,11 @@ section header p {
     text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
     font-size: 14.5px;
     color: #333333;
+}
+.slider img {
+    width: 100%;
+    height: auto;
+    margin: 30px 0 10px 0;
 }
 .btn {
     width: 250px;
@@ -99,7 +104,7 @@ section header p {
 .information p ul li{
     color: #585858;
 }
-#span{
+.span{
     color: #3FCFC7;
 }
 .cybercrime-law{
