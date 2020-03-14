@@ -30,6 +30,18 @@ section header {
     direction: rtl;
 }
 
+section header h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin:100px 0 20px 0 ; 
+    color: #414141;
+}
+section header p {
+    font-size: 15px;
+    color: #b9b9b9;
+    margin-bottom: 80px;
+}
+
 .public-service{
     width: 80%;
     margin: 0 auto;
@@ -80,7 +92,9 @@ section header {
 }
 .information h4 {
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    color: black;
+    margin-top: -5px;
 }
 .information p ul li{
     color: #585858;
@@ -88,15 +102,31 @@ section header {
 #span{
     color: #3FCFC7;
 }
+.cybercrime-law{
+    width: 70%;
+    text-align: center;
+}
+.cybercrime-law h4{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.cybercrime-law p{
+    line-height: 2;
+    color: #797979;
+}
+.information{
+    direction: rtl;
+    line-height: 2.7;
+    color: #797979;
+}
 .social-networks{
     direction: rtl;
 }
 .social-networks h3{
     font-size: 20px;
     margin-top: 10px;
-    margin-bottom: 20px;
 }
-.social-inner a h4{
+.social-inner a p{
     font-size: 13px;
 }
 
