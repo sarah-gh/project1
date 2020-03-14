@@ -47,13 +47,29 @@ section header {
     color: #333333;
 }
 .btn {
+    width: 250px;
     display: grid;
-    margin: 0 auto;
-    align-items: center;
-    align-content: center;
-    justify-items: center;
-    justify-content: center;    
+    text-align: right;
+    background-image: url(../img/arrow_right.png); 
+    background-repeat: no-repeat;
+    background-position: 20px 14px; 
+    background-size: 22px;
+    margin: 10px auto;
+    background-color: #fafafa;
+    border:1px solid  #3FCFC7;
+    border-radius: 30px;
+    color: #3FCFC7;
+    font-size: 18px;
+    font-weight: 200;
+    padding:10px 20px; 
 }
+.btn:hover{
+    background-color: #3FCFC7;
+    color: white;
+    background-image: url(../img/arrow_right2.png); 
+    transition: 0.5s;
+}
+
 #line{
     width: 100%;
 }
