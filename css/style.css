@@ -114,6 +114,24 @@ section header p {
     transition: 0.5s;
 }
 
+.comment{
+    background-color: #ffffff;
+    direction: rtl;
+    padding:10px 0 20px 15px;
+    background-image: url(../img/comment.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+.comment h4 , .comment span , .comment p{
+    margin-right: 70px;
+}
+.comment h4 {
+    font-size: 20px;
+}
+.comment span{
+    font-size: 10px;
+    color: #585858;
+}
 #line{
     width: 100%;
 }

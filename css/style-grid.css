@@ -76,24 +76,7 @@
     z-index: 1;
     font-size: 14px;
 }
-.comment{
-    background-color: #ffffff;
-    direction: rtl;
-    padding:10px 0 20px 15px;
-    background-image: url(../img/comment.png);
-    background-position: right top;
-    background-repeat: no-repeat;
-}
-.comment h4 , .comment span , .comment p{
-    margin-right: 70px;
-}
-.comment h4 {
-    font-size: 20px;
-}
-.comment span{
-    font-size: 10px;
-    color: #585858;
-}
+
 .comments-top{
     display: grid;
     grid-template: repeat(1, 1fr)/repeat(9, 1fr);
@@ -195,7 +178,7 @@ footer{
     width: 30px;
     margin-left: 10px;
 }
-@media only screen and (max-width : 1000px) {
+@media only screen and (max-width : 992px) {
     #menu-img {
         display: inherit;
         width: 40px;
@@ -319,7 +302,7 @@ footer{
     }
 }
 
-@media only screen and (max-width : 650px) {
+@media only screen and (max-width : 768px) {
     .header-backgrond {
         width: 100%;
         height: 100px;

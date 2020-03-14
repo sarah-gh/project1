@@ -80,21 +80,7 @@
     z-index: 1;
     font-size: 13px;
 }
-.comment{
-    background-color: #ffffff;
-    direction: rtl;
-    padding: 2%;
-}
-.comment h4 , .comment span , .comment p{
-    margin-right: 40px;
-}
-.comment h4 {
-    font-size: 20px;
-}
-.comment span{
-    font-size: 10px;
-    color: #585858;
-}
+
 .comments-top , .comments-bottom{
     margin: 10px 0;
     width: 100%;
@@ -103,7 +89,7 @@
     justify-content: space-between;
 }
 .comment-top-right{
-    width: 35%;
+    width: 36%;
     margin-right: 20px;
     min-height: max-content;
 }
@@ -117,7 +103,7 @@
     margin-right: 20px;
 }
 .comment-bottom-right{
-    width: 35%;
+    width: 37%;
     min-height: max-content;
 }
 .comment-inner-bottom{
@@ -155,21 +141,24 @@ footer{
     width: 30%;
     text-align: center;
 }
+.social-networks{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
 .social-inner{
-    margin-top: 10px;
+    margin-top: 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    color: #797979;
 }
 .social-inner img{
     width: 30px;
     margin-left: 10px;
 }
-@media only screen and (max-width : 1390px) {}
 
-@media only screen and (max-width : 1170px) {}
-
-@media only screen and (max-width : 1000px) {
+@media only screen and (max-width : 992px) {
     .menu-img-scroll {
         display: inherit;
         width: 30px;
@@ -239,26 +228,33 @@ footer{
         margin: 0 auto;
     }
 
-    .information {
-        display: none;
-    }
-
     .cybercrime-law {
-        width: 50%;
+        width: 40%;
+        margin-right: 40px;
+        margin-left: -100px;
     }
 
     .cybercrime-law img {
         width: 50px;
         margin-top: 20px;
     }
-
+    .information{
+        line-height:2.5 ;
+    }
+    .information h4{
+        font-size: 15px;
+        margin-top: 30px;
+    }
+    .information ul{
+        font-size: 13px;
+    }
     .cybercrime-law h4 {
         font-size: 14px;
         margin: 10px 0;
     }
 
     .cybercrime-law p {
-        font-size: 10px;
+        font-size: 13px;
         line-height: 2;
         color: #585858;
     }
@@ -274,7 +270,7 @@ footer{
     }
 }
 
-@media only screen and (max-width : 650px) {
+@media only screen and (max-width : 768px) {
     .header-backgrond{
         width: 100%;
         height: 200px;
@@ -319,31 +315,32 @@ footer{
         color: #b9b9b9;
     }
 
-    .public-service--article article {
-        width: 90%;
-        margin: 0 auto 40px auto;
-    }
-
-    .public-service--img {
-        height: 160px;
-    }
-
     .slider a {
         font-size: 14px;
     }
-    .comments-top , .comments-bottom{
-        flex-direction: column;
-        margin-top: -10px;
-    }
     .comment{
+        width: 50%;
+    }
+    .comments-bottom{
+        flex-direction: column;
         width: 100%;
-        margin: 10px 0;
     }
     .comment-bottom-left{
         width: 100%;
+        flex-direction: row;
         margin: 0;
     }
-
+    .comment-inner-bottom , .comment-inner-top{
+        width: 100%;
+        margin: 0px;
+    }
+    .comment-inner-bottom{
+        margin-top: 20px;
+    }
+    .comment-bottom-right{
+        width: 100%;
+        margin-bottom: 20px;
+    }
     .some-customers a img {
         width: 70%;
         display: flex;
@@ -359,27 +356,27 @@ footer{
     }
 
     .cybercrime-law p {
-        font-size: 8px;
-        line-height: 2;
+        font-size: 10px;
+        line-height: 2.5;
         color: #585858;
     }
-
+    .information{
+        margin-top: -10px;
+    }
+    .information ul{
+        font-size: 10px;
+    }
     .cybercrime-law {
-        width: 60%;
+        width: 40%;
     }
 
     .cybercrime-law img {
         width: 40px;
         margin-top: 20px;
     }
-
-    .social-inner a h4 {
-        display: none;
-    }
-
     .social-networks h3 {
-        font-size: 12px;
-        margin-bottom: 10px;
+        font-size: 14px;
+        margin-bottom: 15px;
         margin-top: 0px;
     }
 
@@ -394,9 +391,69 @@ footer{
         width: 100%;
         margin: 0 auto;
     }
-
     .social-inner {
-        width: 40%;
         margin-top: 0px;
     }
+    .social-inner a p {
+        margin-top: -15px;
+        /* display: none; */
+    }
+    .icon{
+        width: 25px;
+        height: 25px;
+        margin-bottom: 15px;
+        font-size: 17px;
+        align-items: center;
+        align-content: center;
+    }
+    .icon i{
+        margin-top: 4px;
+    }
+    
+}
+@media only screen and (max-width : 576px) {
+    .header-top-nav ul {
+        font-size: 11px;
+    }
+    .header-backgrond{
+        height: 150px;
+    }
+    .logo{
+        margin-top: -10px;
+    }
+    .hr-a{
+        margin-top: 50px;
+    }
+    section header h2 {
+        font-size: 16px;
+        margin: 40px 0 20px 0;
+    }
+    .public-service__article{
+        flex-direction: column;
+        margin-top: -60px;
+    }
+    .public-service__img{
+        width: 70%;
+        height: auto;
+    }
+    .comments-top , .comments-bottom{
+        flex-direction: column;
+        margin-top: -10px;
+    }
+    .comment{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .comment-bottom-left{
+        width: 100%;
+        margin: 0;
+    }
+    .information{
+        display: none;
+    }
+    .cybercrime-law{
+        margin-left: 0px;
+        width: 50%;
+    }
+    
 }
