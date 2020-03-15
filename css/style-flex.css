@@ -107,18 +107,18 @@
 .comment-inner-bottom{
     margin-top: 20px;
 }
-.some-customers-header{
+.some-customers{
     width: 80%;
     margin: 20px auto 20px auto;
 }
-.some-customers {
+.some-customers div {
     margin: 0 auto;
     width: 95%;
     display: flex;
     z-index: 1;
     justify-content: space-around;
 }
-.some-customers a img {
+.some-customers div a img {
     margin: 0 auto;
     width: 90%;
     opacity: 0.4;
@@ -218,7 +218,7 @@ footer{
         height: 100px;
     }
 
-    .some-customers img {
+    .some-customers div img {
         width: 80%;
         display: flex;
         align-self: center;
@@ -339,7 +339,7 @@ footer{
         width: 100%;
         margin-bottom: 20px;
     }
-    .some-customers a img {
+    .some-customers div a img {
         width: 70%;
         display: flex;
         align-self: center;

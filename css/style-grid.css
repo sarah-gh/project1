@@ -120,10 +120,10 @@
 .comment p {
     color: rgb(102, 102, 102);
 }
-.some-customers-header{
+.some-customers{
     margin: 20px;
 }
-.some-customers {
+.some-customers div {
     margin: 0 auto;
     width: 95%;
     display: grid;
@@ -132,16 +132,16 @@
     justify-content: space-around;
     justify-items: center;
 }
-.some-customers a {
+.some-customers div a {
     display: grid;
     justify-items: center;
     justify-content: center;
 }
-.some-customers {
+.some-customers div {
     justify-items: center;
     justify-content: center;
 }
-.some-customers a img {
+.some-customers div a img {
     margin: 0 auto;
     width: 90%;
     justify-items: center;
@@ -291,7 +291,7 @@ footer{
     .comment h4 , .comment span , .comment p{
         margin-right: 60px;
     }
-    .some-customers a img {
+    .some-customers div a img {
         width: 70%;
         align-self: center;
         justify-self: center;
@@ -413,7 +413,7 @@ footer{
     .slider a {
         font-size: 14px;
     }
-    .some-customers a img {
+    .some-customers div a img {
         width: 70%;
         display: flex;
         align-self: center;
