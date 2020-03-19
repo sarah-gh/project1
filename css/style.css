@@ -86,8 +86,11 @@ section header p {
     color: #333333;
 }
 
-.slider-botton{
+.slider-button{
+    width: 100%;
     margin-top: 240px;
+    z-index: 10000;
+    position: relative;
 }
 .btn {
     width: 250px;
@@ -104,7 +107,7 @@ section header p {
     color: #3FCFC7;
     font-size: 18px;
     font-weight: 200;
-    padding:10px 20px; 
+    padding:10px 20px;
 }
 .btn:hover {
     background-color: #3FCFC7;
@@ -199,17 +202,17 @@ section header p {
     opacity: 0.7;
 }
 @media only screen and (max-width : 992px) {
-    .slider-botton{
+    .slider-button{
         margin-top: 80px;
     }
 }
 @media only screen and (max-width : 768px) {
-    .slider-botton{
+    .slider-button{
         margin-top: 0px;
     }
 }
 @media only screen and (max-width : 576px) {
-    .slider-botton{
+    .slider-button{
         margin-top: -50px;
     }
 }
