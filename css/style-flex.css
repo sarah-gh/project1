@@ -60,14 +60,7 @@
     height: auto;
     margin-top: 20px;
 }
-.slider{
-    align-items: center;
-    align-content: center;
-    justify-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    width: 100%;
-}
+
 .comments{
     width: 80%;
     min-height: 300px;
