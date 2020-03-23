@@ -1,71 +1,51 @@
 
-
-jQuery(document).ready(function ($) {
     let sliders = [];
     let delay = 4000;
     let timerId;
     let remaining;
     let start;
     let current_playing;
+    // let img = document.getElementsByClassName("slider-img");
+    // for(let i=0 ; i < img.length ; i++){
+    //     img[i].className += " slider-hide";
+    //     sliders.push({ html: this })
+    // };
     $("#rotate-slider").find("img").each(function () {
         this.className += " slider-hide";
         sliders.push({ html: this })
     });
     
-    // function hover(){
-    //     window.clearTimeout(timerId);
-    //     remaining = delay - (new Date() - start);
-    //     $("#slider-btn").show();
-    //     $("#slider-btn .prev-btn").click(function () {
-    //         current_playing++;
-    //         slider_display(sliders, current_playing);
-    //     });
-    //     $("#slider-btn .next-btn").click(function () {
-    //         current_playing--;
-    //         slider_display(sliders, current_playing);
-    //     });
-    // }
-
-    // function hide(){
-    //     slider_loop(sliders, current_playing, remaining);
-    //     $("#slider-btn").hide();
-    //     $("#slider-btn .prev-btn").unbind("click");
-    //     $("#slider-btn .next-btn").unbind("click");
-    // }
-
-    $("#rotate-slider").hover(function () {
+    document.getElementById("rotate-slider").addEventListener("mouseover",function (){
         window.clearTimeout(timerId);
-        remaining = delay - (new Date() - start);
-        $("#slider-btn").show();
-        $("#slider-btn .prev-btn").click(function () {
+        document.getElementById("slider-btn").style.display = "inherit";
+        document.getElementById("prev-btn").addEventListener("click",function () {
             current_playing++;
             slider_display(sliders, current_playing);
         });
-        $("#slider-btn .next-btn").click(function () {
+        document.getElementById("next-btn").addEventListener("click",function () {
             current_playing--;
             slider_display(sliders, current_playing);
         });
-    }, function () {
+    })
+    document.getElementById("rotate-slider").addEventListener( "mouseout" , function (){
         slider_loop(sliders, current_playing, remaining);
-        $("#slider-btn").hide();
+        document.getElementById("slider-btn").style.display = "none";
         $("#slider-btn .prev-btn").unbind("click");
         $("#slider-btn .next-btn").unbind("click");
-    });
+    })
 
     // $("#rotate-slider").hover(function () {
     //     window.clearTimeout(timerId);
     //     remaining = delay - (new Date() - start);
     //     $("#slider-btn").show();
-    //     var e = document.getElementsByClassName("prev-btn").addEventListener("click" ,  prev );
-    //     function prev() {
+    //     $("#slider-btn #prev-btn").click(function () {
     //         current_playing++;
     //         slider_display(sliders, current_playing);
-    //     };
-    //     document.getElementsByClassName("next-btn").addEventListener("click" , next)
-    //     function next() {
+    //     });
+    //     $("#slider-btn #next-btn").click(function () {
     //         current_playing--;
     //         slider_display(sliders, current_playing);
-    //     };
+    //     });
     // }, function () {
     //     slider_loop(sliders, current_playing, remaining);
     //     $("#slider-btn").hide();
@@ -73,9 +53,9 @@ jQuery(document).ready(function ($) {
     //     $("#slider-btn .next-btn").unbind("click");
     // });
 
+
     function slider_init() {
-        $("#rotate-slider").css('display', 'block');
-        $("#rotate-slider").append("<div id='slider-btn'><a class='prev-btn'><i class='arr-left'></i></a><a class='next-btn'><i class='arr-right'></i></a></div>")
+        document.getElementById("rotate-slider").style.display = "block";
         slider_display(sliders, 0);
         slider_loop(sliders, -1, delay);
     }
@@ -104,4 +84,3 @@ jQuery(document).ready(function ($) {
     }
 
     slider_init();
-});

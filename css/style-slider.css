@@ -80,13 +80,13 @@
 #slider-btn {
     display: none;
 }
-#slider-btn .next-btn i{
+#slider-btn #next-btn i{
     margin: 13px 5px 0 0;
 }
-#slider-btn .prev-btn i{
+#slider-btn #prev-btn i{
     margin: 13px 0 0 5px;
 }
-#slider-btn .prev-btn {
+#slider-btn #prev-btn {
     position: absolute;
     margin-top: 20%;
     left: 0px;
@@ -98,7 +98,7 @@
     background-color: #3FCFC7;
     border-radius: 50%;
 }
-#slider-btn .next-btn {
+#slider-btn #next-btn {
     position: absolute;
     margin-top: 20%;
     left: calc(100% - 40px);
