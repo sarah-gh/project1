@@ -12,44 +12,20 @@ let current_playing;
 //     sliders.push(img[i]);
 // };
 
-$("#rotate-slider").find("img").each(function () {
+$(".slider-img").each(function () {
     sliders.push({ html: this });
     console.log(sliders);
 });
-document.getElementById("rotate-slider").addEventListener("mouseover", function () {
-    window.clearTimeout(timerId);
-    document.getElementById("slider-btn").style.display = "inherit";
-    document.getElementById("prev-btn").onclick = function () {
-        console.log(current_playing);
-        current_playing++;
-        console.log(current_playing);
-        slider_display(sliders, current_playing);
-    };
-    document.getElementById("next-btn").onclick = function () {
-        console.log(current_playing);
-        current_playing--;
-        console.log(current_playing);
-        slider_display(sliders, current_playing);
-    };
-})
-document.getElementById("rotate-slider").addEventListener("mouseout", function () {
-    slider_loop(sliders, current_playing, remaining);
-    document.getElementById("slider-btn").style.display = "none";
-    $("#slider-btn #prev-btn").unbind("click");
-    $("#slider-btn #next-btn").unbind("click");
-})
 // document.getElementById("rotate-slider").addEventListener("mouseover", function () {
 //     window.clearTimeout(timerId);
 //     document.getElementById("slider-btn").style.display = "inherit";
-//     document.getElementById("prev-btn").addEventListener("click", prev);
-//     function prev() {
+//     document.getElementById("prev-btn").onclick = function () {
 //         console.log(current_playing);
 //         current_playing++;
 //         console.log(current_playing);
 //         slider_display(sliders, current_playing);
 //     };
-//     document.getElementById("next-btn").addEventListener("click", next);
-//     function next() {
+//     document.getElementById("next-btn").onclick = function () {
 //         console.log(current_playing);
 //         current_playing--;
 //         console.log(current_playing);
@@ -62,6 +38,33 @@ document.getElementById("rotate-slider").addEventListener("mouseout", function (
 //     $("#slider-btn #prev-btn").unbind("click");
 //     $("#slider-btn #next-btn").unbind("click");
 // })
+
+
+
+document.getElementById("rotate-slider").addEventListener("mouseover", function () {
+    window.clearTimeout(timerId);
+    document.getElementById("slider-btn").style.display = "inherit";
+    document.getElementById("prev-btn").addEventListener("click", prev);
+    document.getElementById("next-btn").addEventListener("click", next);
+});
+document.getElementById("rotate-slider").addEventListener("mouseout", function () {
+    slider_loop(sliders, current_playing, remaining);
+    document.getElementById("slider-btn").style.display = "none";
+    $("#slider-btn #prev-btn").unbind("click");
+    $("#slider-btn #next-btn").unbind("click");
+});
+function prev() {
+    console.log(current_playing);
+    current_playing++;
+    console.log(current_playing);
+    slider_display(sliders, current_playing);
+};
+function next() {
+    console.log(current_playing);
+    current_playing--;
+    console.log(current_playing);
+    slider_display(sliders, current_playing);
+};
 
 
 
