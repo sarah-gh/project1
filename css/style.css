@@ -25,6 +25,7 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
+.clear { clear: both; }
 html {
     background-color: #e4e4e4;
 }

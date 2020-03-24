@@ -5,17 +5,21 @@ let timerId;
 let remaining;
 let start;
 let current_playing;
-// let img = [];
-// img = document.getElementsByClassName("slider-img");
-// console.log(img.length);
-// for(let i=0 ; i < img.length ; i++){
-//     sliders.push(img[i]);
-// };
+
+// let sliderImage = [];
+// let item = 6;
+// let value = 0
+// sliderImage = document.getElementsByClassName("slider-img");
+// sliderImage.forEach( Element => {
+//     sliders.push({ html: this });
+// });
+
 
 $(".slider-img").each(function () {
     sliders.push({ html: this });
     console.log(sliders);
 });
+
 // document.getElementById("rotate-slider").addEventListener("mouseover", function () {
 //     window.clearTimeout(timerId);
 //     document.getElementById("slider-btn").style.display = "inherit";
@@ -35,11 +39,9 @@ $(".slider-img").each(function () {
 // document.getElementById("rotate-slider").addEventListener("mouseout", function () {
 //     slider_loop(sliders, current_playing, remaining);
 //     document.getElementById("slider-btn").style.display = "none";
-//     $("#slider-btn #prev-btn").unbind("click");
-//     $("#slider-btn #next-btn").unbind("click");
+//     document.getElementById("prev-btn").removeEventListener("click", prev);
+//    document.getElementById("next-btn").removeEventListener("click", next);
 // })
-
-
 
 document.getElementById("rotate-slider").addEventListener("mouseover", function () {
     window.clearTimeout(timerId);
@@ -50,8 +52,8 @@ document.getElementById("rotate-slider").addEventListener("mouseover", function 
 document.getElementById("rotate-slider").addEventListener("mouseout", function () {
     slider_loop(sliders, current_playing, remaining);
     document.getElementById("slider-btn").style.display = "none";
-    $("#slider-btn #prev-btn").unbind("click");
-    $("#slider-btn #next-btn").unbind("click");
+    document.getElementById("prev-btn").removeEventListener("click", prev);
+    document.getElementById("next-btn").removeEventListener("click", next);
 });
 function prev() {
     console.log(current_playing);
@@ -65,8 +67,6 @@ function next() {
     console.log(current_playing);
     slider_display(sliders, current_playing);
 };
-
-
 
 function slider_init() {
     document.getElementById("rotate-slider").style.display = "block";
