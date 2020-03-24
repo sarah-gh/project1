@@ -6,19 +6,17 @@ let remaining;
 let start;
 let current_playing;
 
-// let sliderImage = [];
-// let item = 6;
-// let value = 0
-// sliderImage = document.getElementsByClassName("slider-img");
-// sliderImage.forEach( Element => {
+let Slider =  document.getElementsByClassName("slider-img");
+for (let sliderElement of Slider) {
+    console.log(Slider);
+    sliders.push({ html  : sliderElement });
+}
+
+
+// $(".slider-img").each(function () {
 //     sliders.push({ html: this });
+//     console.log(sliders);
 // });
-
-
-$(".slider-img").each(function () {
-    sliders.push({ html: this });
-    console.log(sliders);
-});
 
 // document.getElementById("rotate-slider").addEventListener("mouseover", function () {
 //     window.clearTimeout(timerId);
