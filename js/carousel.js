@@ -57,7 +57,7 @@ function prev() {
     console.log(current_playing);
     current_playing++;
     console.log(current_playing);
-    slider_display(sliders, current_playing);
+    slider_display_prev(sliders, current_playing);
 };
 function next() {
     console.log(current_playing);
@@ -80,6 +80,19 @@ function slider_display(A, i) {
     current_playing = i;
     A[(i + A.length + 3) % A.length].html.className += " slider-hide";
     A[(i + A.length) % A.length].html.className = "slider-middle";
+    A[(i + A.length - 1) % A.length].html.className = "slider-left-1";
+    A[(i + A.length - 2) % A.length].html.className = "slider-left-2";
+    A[(i + A.length + 1) % A.length].html.className = "slider-right-1";
+    A[(i + A.length + 2) % A.length].html.className = "slider-right-2";
+
+}
+function slider_display_prev(A, i) {
+    if (i < 0) {
+        i = A.length - 1;
+    }
+    current_playing = i;
+    A[(i + A.length + 3) % A.length].html.className += " slider-hide";
+    A[(i + A.length) % A.length].html.className = "slider-middle_prev";
     A[(i + A.length - 1) % A.length].html.className = "slider-left-1";
     A[(i + A.length - 2) % A.length].html.className = "slider-left-2";
     A[(i + A.length + 1) % A.length].html.className = "slider-right-1";
